@@ -1,5 +1,5 @@
-FROM alpine/terragrunt:0.14.9 AS source
+FROM alpine/terragrunt:0.15.0 AS source
 
-FROM runatlantis/atlantis:v0.16.1
+FROM runatlantis/atlantis:v0.17.0
 COPY --from=source /usr/local/bin/terragrunt /usr/local/bin/
 
